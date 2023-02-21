@@ -1,0 +1,357 @@
+:root {
+  /* COLOR */
+  --main-color: #ff3c28;
+  /* --main-color: #004fff; */
+  --icon-color: #6C839B;
+  --menu-color: 82 86 101;
+  --desc-color: #1C1E25;
+  --caption-color: #51596D;
+  --title-large-color: #272E3E;
+  --title-small-color: #484A4E;
+  /* FONT SIZE */
+  --desc-font: 16px;
+  --title-font: 36px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgb(250, 250, 250);
+}
+.container {
+  /* background-color: cornflowerblue; */
+  width: 1440px;
+  height: 100vh;
+}
+
+/* ASIDE 
+-------------------- */
+aside {
+  /* background-color: lightsalmon; */
+  width: 270px;
+  height: 100%;
+  float: left;
+  padding: 40px 40px;
+}
+.logo {
+  height: 24px;
+}
+.menu {
+  margin: 32px 0 40px 0;
+}
+.menu li {
+  width: 190px;
+  height: 40px;
+  /* background-color: aquamarine; */
+  padding: 8px 0;
+  /* font-weight: bold; */
+  font-size: var(--desc-font);
+  color: rgb(var(--menu-color) / 80%);
+}
+.menu li i {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  color: var(--icon-color);
+}
+.hashyag {
+  font-size: 14px;
+}
+.hashyag li {
+  width: 190px;
+  height: 40px;
+  /* background-color: aquamarine; */
+  padding: 8px 0;
+  /* font-weight: bold; */
+  font-size: var(--desc-font);
+  color: rgb(var(--menu-color) / 80%);
+}
+.hashyag li:first-child {
+  margin-top: 10px;
+}
+.hashyag li i {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  color: var(--icon-color);
+}
+/* CONTENTS 
+-------------------- */
+.contents {
+  /* background-color: olive; */
+  width: 1170px;
+  height: auto;
+  float: right;
+  padding: 50px 40px;
+  background: rgb(250, 250, 250) url(img/today-1.png) no-repeat top / contain;
+}
+.contents > .button {
+  display: flex;
+  float: right;
+}
+.button .user {
+  background: url(img/user.jpg) no-repeat center / cover;
+}
+.button .btn {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 12px;
+}
+.btn i {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  color: var(--icon-color);
+}
+h2 {
+  font-size: 18px;
+  color: var(--title-small-color);
+}
+.today h1 {
+  font-size: var(--title-font);
+  line-height: 48px;
+  font-weight: bold;
+  color: var(--title-large-color);
+  margin: 32px 0 10px 0;
+}
+h3 {
+  font-size: 14px;
+  color: var(--caption-color);
+}
+.today .button {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.today .button li:first-child {
+  width: 90px;
+  height: 36px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 36px;
+  background-color: var(--main-color);
+  border-radius: 30px;
+  color: #fff;
+  box-shadow: 0 10px 10px -5px rgba(255, 60, 40, 0.6);
+}
+.today .button li {
+  margin-right: 10px;
+}
+.today .button li i {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  color: var(--title-large-color);
+}
+.artists {
+  display: flex;
+  text-align: center;
+}
+.artists li {
+  margin: 30px 30px 0 0;
+}
+.artists li img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+p {
+  font-size: 14px;
+  color: var(--desc-color);
+  margin-bottom: 3px;
+}
+span {
+  font-size: 12px;
+  color: var(--caption-color);
+}
+.albums {
+  margin-top: 50px;
+}
+.albums ul {
+  display: flex;
+  text-align: center;
+}
+.albums ul li {
+  margin-right: 20px;
+}
+.albums img {
+  width: 165px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 24px 18px -10px rgba(56, 63, 77, 0.2);
+}
+.list {
+  margin-top: 40px;
+  float: left;
+}
+.list:last-child {
+  float: right;
+}
+.list h2 {
+  float: left;
+  margin-right: 15px;
+}
+.list ul {
+  clear: both;
+}
+.list ul li {
+  display: flex;
+  align-items: center;
+  width: 535px;
+  height: 60px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.list ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.list ul li h3 {
+  padding-right: 20px;
+}
+.list .info {
+  padding: 0 280px 0 10px;
+}
+.list .additional i {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+  color: var(--icon-color);
+  margin-left: 10px;
+}
+/* PLAYER 
+-------------------- */
+.player {
+  background-color: rgba(255, 255, 255, 0.3);  
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 80px;
+  clear: both;
+  bottom: 0;
+  position: fixed;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 -6px 10px rgba(56, 63, 77, 0.1);
+}
+.play {
+  display: flex;
+  align-items: center;
+}
+.play img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+.player .controls i {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  color: var(--icon-color);
+  margin-right: 30px;
+  text-align: center;
+  line-height: 48px;
+}
+.player .controls i:last-child {
+  margin-right: 0px;
+}
+.player .controls i:nth-child(3) {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  color: #fff;
+  box-shadow: 0 3px 6px rgba(255, 60, 40, 0.4);
+}
+.player .controls i:nth-child(2),
+.player .controls i:nth-child(4) {
+  font-size: 14px;
+}
+.now {
+  display: flex;
+  align-items: center;
+}
+.now .wrap {
+  position: relative;
+  width: 312px;
+  height: 28px;
+  margin: 0 13px;
+}
+.now .wrap .back {
+  width: 312px;
+  height: 4px;
+  background-color: rgba(81, 89, 109, 0.1);
+  position: absolute;
+  margin-top: 10px;
+
+}
+.now .wrap .load {
+  width: 90px;
+  height: 4px;
+  background-color: var(--main-color);
+  position: absolute;
+  margin-top: 10px;
+  
+}
+.now .wrap .point {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  transform: translate(90px, -6px);
+  box-shadow: 0 0 8px rgba(255, 60, 40, 1);
+  margin-top: 10px;
+} 
+.player .vol i {
+  width: 24px;
+  height: 24px;
+  font-size: 18px;
+  color: var(--icon-color);
+  text-align: center;
+}
+.vol {
+  display: flex;
+  align-items: center;
+}
+.vol .wrap {
+  position: relative;
+  width: 120px;
+  height: 28px;
+  margin: 0 13px;
+}
+.vol .wrap .back {
+  width: 120px;
+  height: 4px;
+  background-color: rgba(81, 89, 109, 0.1);
+  position: absolute;
+  margin-top: 10px;
+
+}
+.vol .wrap .load {
+  width: 60px;
+  height: 4px;
+  background-color: var(--main-color);
+  position: absolute;
+  margin-top: 10px;
+}
